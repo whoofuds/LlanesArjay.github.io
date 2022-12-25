@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Skill</title>
+    <link rel ="icon" type="image/jpg" href="ako.jpg"  />
+
+    <link rel="stylesheet" href="style.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+
+  <body>
+     <!--header-->
+     <header class="header">
+      <a href="index.html" class ="logo">
+         <h2>Arjay Llanes</h2>
+     </a>
+<!--NAVIGATOR-->
+
+     <nav class="navigator">
+         <a href="index.html" >home</a>        
+         <a href="about.html">about me</a>
+         <a href="skill.html"class = "active1">skill</a>
+         <a href="project.html">my projects</a>
+     </nav>
+ <div class="icon">
+
+     <div class="fas fa-search" id="search-btn"></div>
+     <div class="fas fa-bars" id="menu-btn"></div>
+
+ </div>
+
+     <div class="search-form">
+         <input type="search" id ="search" placeholder ="Search here.....">
+         <label for="search" class="fas fa-search"></label>
+
+     </div>
+
+
+
+</header>
+
+<h3>Makes your bestfriend happy!</h3>
+<p>I will always woof you.<br>
+    My best friend has a fur and a tail.<br>
+    but they make our lives whole ggggggggggg.</p>
+    <br>
+   
+        <br>
+    <h1>My Skills</h1>
+    <div class="skills-area">
+      <div class="skill">
+        <div class="skill-title">HTML</div>
+        <div class="skill-bar"></div>
+        <div class="html skill-fill">
+          <span class="skill-percent">80%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">CSS</div>
+        <div class="skill-bar"></div>
+        <div class="css skill-fill">
+          <span class="skill-percent">60%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">JavaScript</div>
+        <div class="skill-bar"></div>
+        <div class="js skill-fill">
+          <span class="skill-percent">20%</span>
+        </div>
+      </div>
+  
+
+    <div class="skill">
+      <div class="skill-title">Java</div>
+      <div class="skill-bar"></div>
+      <div class="java skill-fill">
+        <span class="skill-percent">80%</span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">PHP</div>
+      <div class="skill-bar"></div>
+      <div class="php skill-fill">
+        <span class="skill-percent">50%</span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">MySql</div>
+      <div class="skill-bar"></div>
+      <div class="sql skill-fill">
+        <span class="skill-percent">40%</span>
+      </div>
+    </div>
+
+  </div>
+
+     <!-- custom js file link  -->
+<script src="script.js">
+  let navigator = document.querySelector('.navigator');
+
+  document.querySelector('#menu-btn').onclick = () =>{
+      navigator.classList.toggle('active');
+  }
+  let searchform = document.querySelector('.search-form');
+
+  document.querySelector('#search-btn').onclick = () =>{
+      navigator.classList.toggle('active');
+  }
+
+</script>
+  </body>
+</html>

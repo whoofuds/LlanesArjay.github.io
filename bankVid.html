@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel ="icon" type="image/jpg" href="ako.jpg"  />
+    <link rel="stylesheet" href ="index.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+</head>
+<body>
+   
+    <!--header-->
+    <header class="header">
+        <a href="index.html" class ="logo">
+           <h2>Arjay Llanes</h2>
+       </a>
+    <!--NAVIGATOR-->
+   
+            <nav class="navigator">
+                <a href="index.html" >home</a>        
+                <a href="about.html">about me</a>
+                <a href="skill.html">skill</a>
+                <a href="project.html"class = "active1">my projects</a>
+            </nav>
+        <div class="icon">
+
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+
+            <div class="search-form">
+                <input type="search" id ="search" placeholder ="Search here.....">
+                <label for="search" class="fas fa-search"></label>
+
+            </div>
+
+
+ 
+    </header>
+
+    <!--about-->
+    <div class="content">
+    
+    
+        <h3>Makes your bestfriend happy!</h3>
+        <p>I will always woof you.<br>
+            My best friend has a fur and a tail.<br>
+            but they make our lives whole ggggggggggg.</p>
+            <br>
+                
+
+
+</div>
+           <section class="about" id="about">
+            
+        
+            <div class="row">
+                <br>
+                <div class="image">
+                    
+                     <video src="bank.mp4" controls></video>
+                </div>
+                <div class="content">
+                    
+                    
+                     
+                </div>
+                
+            </div>
+            <p > <h3 style="color: aliceblue;">This video has no sound.</h3></p>
+            <a href="bank.html" class="btn">back</a>
+           </section>
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- custom js file link  -->
+<script src="script.js">
+        let navigator = document.querySelector('.navigator');
+
+        document.querySelector('#menu-btn').onclick = () =>{
+            navigator.classList.toggle('active');
+        }
+        let searchform = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            navigator.classList.toggle('active');
+        }
+</script>
+    
+</body>
+</html>

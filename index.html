@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjay Llanes</title>
+    <link rel ="icon" type="image/jpg" href="ako.jpg"  />
+    <link rel="stylesheet" href ="index.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+</head>
+<body>
+    
+   
+    <!--header-->
+    <header class="header">
+             <a href="index.html" class ="logo">
+                <h1>Arjay Llanes</h1>
+            </a>
+    <!--NAVIGATOR-->
+   
+            <nav class="navigator">
+                <a href="index.html" class = "active1">home</a>
+                <a href="about.html">about me</a>            
+                <a href="skill.html">skill</a>
+                <a href="project.html">my projects</a>
+                
+            </nav>
+        <div class="icon">
+
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+
+            <div class="search-form">
+                <input type="search" id ="search" placeholder ="Search here.....">
+                <label for="search" class="fas fa-search"></label>
+
+            </div>
+
+
+ 
+    </header>
+
+    <!--homePage-->
+            <section class="home" id="home">
+                
+                <div class="content">
+                    
+                    <div class="heading"><h6> <span class="emoji">👋</span>hi, I'm</h6></div>
+                    <h2 class="heading"><span>Arjay Llanes</span></h2>
+                    
+                    <p class="asp">
+                        Aspiring to become a web Developer<br></p>
+                        <br>
+                        <p class="asp2">
+                        Passionate about making <br>websites</p>
+                        <br>
+                        
+                        </p>
+                        <a href="contactme.html" class="btn">Contact Me</a>         
+                        <a href="project.html" class="btn">My Projects</a>
+                </div>
+                <div class="content2">
+                    
+                    <img src="edit-removebg-preview.png">
+                </div>
+
+
+
+
+            </section>
+
+           
+
+<style>
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #1a023efd;
+   /*background: url(../project1/bg1.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+
+}</style>
+
+
+
+
+
+
+
+
+  <!-- custom js file link  -->
+<script src="script.js">
+        let navigator = document.querySelector('.navigator');
+
+        document.querySelector('#menu-btn').onclick = () =>{
+            navigator.classList.toggle('active');
+        }
+        let searchform = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            navigator.classList.toggle('active');
+        }
+</script>
+    
+</body>
+</html>

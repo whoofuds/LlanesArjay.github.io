@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me</title>
+    <link rel="icon" type="image/jpg" href="ako.jpg">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a href="index.html" class ="logo">
+            <h2>Arjay Llanes</h2>
+        </a>
+        <!--NAVIGATOR-->
+   
+        <nav class="navigator">
+            <a href="index.html" >home</a>
+            <a href="about.html">about me</a>
+            <a href="skill.html">skill</a>
+            <a href="project.html">My Projects</a>
+        </nav>
+    
+        <div class="icon">
+
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+
+            <div class="search-form">
+                <input type="search" id ="search" placeholder ="Search here.....">
+                <label for="search" class="fas fa-search"></label>
+
+            </div>
+</header>
+<h3>Makes your bestfriend happy!</h3>
+<p>I will always woof you.<br>
+    My best friend has a fur and a tail.<br>
+    but they make our lives whole.</p>
+    <br>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<form class="right" action="https://formsubmit.co/50971d603bf7feb558c0bd3e2df3067d" method="POST">
+            
+				<h2>Contact Me</h2>
+                <div class="content">
+                    <h3 class="contactme">Name: Arjay L. Llanes</h3><br>
+                    <h3 class="contactme">Contact No.: 09666456285</h3><br>
+                    <h3 class="contactme">Email:arjayllanes127@gmail.com</h3><br>
+                </div> 
+                
+				<div class="col">
+                    <label for="name">Full Name</label>
+                    <input type="text"  name="name" class="field" required
+                           value="">
+                </div>
+                <div class="col">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" class="field" required
+                           value="">
+                </div>
+            
+        
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" class="field" required
+                   value="">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea  class="field" name="message" rows="8"
+                      required></textarea>
+        </div>
+				<button type ="submit" class="btn">Send</button>
+			</form>
+		</div>
+	</div>
+
+    <script src="script.js">
+        let navigator = document.querySelector('.navigator');
+
+        document.querySelector('#menu-btn').onclick = () =>{
+            navigator.classList.toggle('active');
+        }
+        let searchform = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            navigator.classList.toggle('active');
+        }
+</script>
+</body>
+</html>
